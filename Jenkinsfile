@@ -17,7 +17,7 @@ pipeline {
         stage("build jar") {
             steps {
                 script {
-                    echo "Project build java app..."
+                    echo "Build project java app..."
                     gv.buildJar()
 
                 }
