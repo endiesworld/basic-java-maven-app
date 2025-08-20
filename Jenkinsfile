@@ -9,6 +9,7 @@ pipeline {
         stage("init") {
             steps {
                 script {
+                    echo "Projecet initialization..."
                     gv = load "script.groovy"
                 }
             }
@@ -16,6 +17,7 @@ pipeline {
         stage("build jar") {
             steps {
                 script {
+                    echo "Project build java image..."
                     gv.buildJar()
 
                 }
